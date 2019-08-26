@@ -181,7 +181,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~assets/styles/common.scss';
+@import "~assets/styles/common.scss";
 
 $header-height: 80px;
 $header-desktop-height: 146px;
@@ -192,15 +192,15 @@ $min-height: 667px;
   section {
     &.pocket {
       height: calc(100vh - #{$header-height});
-      background: url('~assets/images/faq/pocket_mobile.png') right center/auto
+      background: url("~assets/images/faq/pocket_mobile.png") right center/auto
         100% no-repeat;
       @media only screen and (min-width: $tablet) {
-        background: url('~assets/images/faq/pocket_tablet.png') right
+        background: url("~assets/images/faq/pocket_tablet.png") right
           center/auto 100% no-repeat;
       }
       @media only screen and (min-width: 1200px) {
         height: 800px;
-        background: url('~assets/images/faq/bg_pocket.png') right top/auto 137%
+        background: url("~assets/images/faq/bg_pocket.png") right top/auto 137%
           no-repeat;
       }
       @media only screen and (min-width: $wide) {
@@ -226,7 +226,7 @@ $min-height: 667px;
 
     &.online {
       .content {
-        background: url('~assets/images/faq/bg_online.png') left bottom/61%
+        background: url("~assets/images/faq/bg_online.png") left bottom/61%
           no-repeat;
         @media screen and (min-width: $desktop) {
           background-size: 55%;
@@ -256,20 +256,20 @@ $min-height: 667px;
       position: static;
       height: 400px;
       background: $white-fill,
-        url('~assets/images/faq/bg_phone_mobile.png') 70% top/cover no-repeat;
+        url("~assets/images/faq/bg_phone_mobile.png") 70% top/cover no-repeat;
       @media screen and (min-width: $tablet) {
         height: 500px;
         background: $white-fill,
-          url('~assets/images/faq/bg_phone_mobile.png') right top/89% 100%
+          url("~assets/images/faq/bg_phone_mobile.png") right top/89% 100%
             no-repeat;
       }
       @media screen and (min-width: $desktop) {
-        background: url('~assets/images/faq/bg_phone.png') right top/87% 100%
+        background: url("~assets/images/faq/bg_phone.png") right top/87% 100%
           no-repeat;
         height: 826px;
       }
       @media screen and (min-width: $wide) {
-        background: url('~assets/images/faq/bg_phone_wide.png') right top/auto
+        background: url("~assets/images/faq/bg_phone_wide.png") right top/auto
           100% no-repeat;
       }
       .text-wrapper {
@@ -285,7 +285,7 @@ $min-height: 667px;
     &.express {
       background: #fff;
       .overlay {
-        background: url('~assets/images/faq/bg_express_mobile.png') -80px bottom/290px
+        background: url("~assets/images/faq/bg_express_mobile.png") -80px bottom/290px
           auto no-repeat;
         @media screen and (min-width: $tablet) {
           top: -70px;
@@ -297,7 +297,7 @@ $min-height: 667px;
         @media screen and (min-width: $desktop) {
           left: 0;
           width: 1600px;
-          background: url('~assets/images/faq/bg_express.png') left bottom/auto
+          background: url("~assets/images/faq/bg_express.png") left bottom/auto
             100% no-repeat;
         }
         @media screen and (min-width: $wide) {
@@ -322,16 +322,16 @@ $min-height: 667px;
 
     &.aggregation {
       height: 825px;
-      background: url('~assets/images/faq/bg_aggregation.png') 180px 420px/70%
+      background: url("~assets/images/faq/bg_aggregation.png") 180px 420px/70%
         no-repeat;
       @media screen and (min-width: $tablet) {
         height: 855px;
-        background: url('~assets/images/faq/bg_aggregation.png') right 280px/380px
+        background: url("~assets/images/faq/bg_aggregation.png") right 280px/380px
           auto no-repeat;
       }
       @media screen and (min-width: $desktop) {
         height: 950px;
-        background: url('~assets/images/faq/bg_aggregation.png') 80% bottom/auto
+        background: url("~assets/images/faq/bg_aggregation.png") 80% bottom/auto
           70% no-repeat;
       }
       .content {
@@ -354,7 +354,7 @@ $min-height: 667px;
         width: 130px;
         height: 44px;
         margin-top: 55px;
-        background: url('~assets/images/google_play.png') center/contain
+        background: url("~assets/images/google_play.png") center/contain
           no-repeat;
         @media screen and (min-width: $tablet) {
           width: 223px;

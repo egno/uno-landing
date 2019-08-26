@@ -11,10 +11,21 @@
             <h1 class="main-page__heading">
               НОВАЯ СИСТЕМА УЧЕТА ДЛЯ&nbsp;ИНДУСТРИИ КРАСОТЫ
             </h1>
-            <a id="regbutton_maintop" class="main-page__register-link" :href="registerLink" @mousedown.native="$metrika.reachGoal( 'regbutton_maintop')">
+            <a
+              id="regbutton_maintop"
+              class="main-page__register-link"
+              :href="registerLink"
+              @mousedown.native="$metrika.reachGoal('regbutton_maintop')"
+            >
               ПОЛЬЗУЙТЕСЬ БЕСПЛАТНО
             </a>
-            <a id="morelink_maintop" v-smooth-scroll href="/#product" class="main-page__scroll" @mousedown.native="$metrika.reachGoal( 'morelink_maintop')">
+            <a
+              id="morelink_maintop"
+              v-smooth-scroll
+              href="/#product"
+              class="main-page__scroll"
+              @mousedown.native="$metrika.reachGoal('morelink_maintop')"
+            >
               <span>УЗНАЙТЕ БОЛЬШЕ</span>
             </a>
           </div>
@@ -106,7 +117,12 @@
               отдельно.
             </div>
           </div>
-          <a id="reglink_mainmiddle" :href="registerLink" class="inner-link layer-1" @mousedown.native="$metrika.reachGoal( 'reglink_mainmiddle')">
+          <a
+            id="reglink_mainmiddle"
+            :href="registerLink"
+            class="inner-link layer-1"
+            @mousedown.native="$metrika.reachGoal('reglink_mainmiddle')"
+          >
             ПОЛУЧИТЕ ДОСТУП УЖЕ СЕЙЧАС
           </a>
         </div>
@@ -154,7 +170,7 @@
             id="morelink_mainmiddle"
             :to="{ name: 'features', hash: '#sms-notifications' }"
             class="inner-link layer-1"
-            @mousedown.native="$metrika.reachGoal( 'morelink_mainmiddle')"
+            @mousedown.native="$metrika.reachGoal('morelink_mainmiddle')"
           >
             ПОДРОБНЕЕ О РАБОТЕ С&nbsp;КЛИЕНТАМИ БИЗНЕСА
           </nuxt-link>
@@ -203,8 +219,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~assets/styles/common.scss';
-@import 'lato-font/scss/_public-api.scss';
+@import "~assets/styles/common.scss";
+@import "lato-font/scss/_public-api.scss";
 
 $header-height: 80px;
 $header-desktop-height: 146px;
@@ -223,27 +239,27 @@ $saloons: beauty spa cosmetic hairdressers barbershop massage tattoo lash
       justify-content: space-between;
       align-items: center;
       background: $white-fill,
-        url('~assets/images/bg_intro.png') center bottom/230%auto no-repeat #fff;
+        url("~assets/images/bg_intro.png") center bottom/230%auto no-repeat #fff;
       @media only screen and (min-aspect-ratio: 768/1024) and (min-width: $tablet) {
         background: $white-fill,
-          url('~assets/images/bg_home_first_tablet.png') right bottom/230% auto
+          url("~assets/images/bg_home_first_tablet.png") right bottom/230% auto
             no-repeat #fff;
       }
       @media only screen and (min-aspect-ratio: 1024/768) and (min-width: $tablet) {
         background: $white-fill,
-          url('~assets/images/bg_home_first_tablet.png') 60% bottom/160% auto
+          url("~assets/images/bg_home_first_tablet.png") 60% bottom/160% auto
             no-repeat #fff;
       }
       @media only screen and (min-width: $desktop) {
         position: relative;
-        background: url('~assets/images/bg_home_first_desktop.png') 60% bottom/100% auto
-            no-repeat #fff;
+        background: url("~assets/images/bg_home_first_desktop.png") 60%
+          bottom/100% auto no-repeat #fff;
       }
       @media only screen and (min-height: $desktop-height) {
         height: calc(100vh - #{$header-desktop-height});
       }
       @media only screen and (min-width: $wide) and (min-height: $desktop-height) {
-        background: url('~assets/images/bg_home_first_wide.png') center
+        background: url("~assets/images/bg_home_first_wide.png") center
           bottom/auto 100% no-repeat #fff;
       }
       @media screen and (min-height: 1023px) {
@@ -345,7 +361,7 @@ $saloons: beauty spa cosmetic hairdressers barbershop massage tattoo lash
         text-decoration: none !important;
         &:after {
           display: block;
-          content: '';
+          content: "";
           height: 7px;
           width: 7px;
           margin-left: 5px;
@@ -380,11 +396,11 @@ $saloons: beauty spa cosmetic hairdressers barbershop massage tattoo lash
 
     &.pricing {
       height: 820px;
-      background: url('~assets/images/home/bg_pricing_mobile.png') right
+      background: url("~assets/images/home/bg_pricing_mobile.png") right
         bottom/auto 50% no-repeat #fff;
       @media only screen and (min-width: $tablet) {
         height: 728px;
-        background: url('~assets/images/home/bg_pricing.png') 95% bottom/auto
+        background: url("~assets/images/home/bg_pricing.png") 95% bottom/auto
           600px no-repeat #fff;
       }
       @media only screen and (min-width: $desktop) {
@@ -400,10 +416,10 @@ $saloons: beauty spa cosmetic hairdressers barbershop massage tattoo lash
     }
 
     &.integration-time {
-      background: url('~assets/images/home/time.png') -20px top/contain no-repeat;
+      background: url("~assets/images/home/time.png") -20px top/contain no-repeat;
       @media screen and (min-width: $tablet) {
         height: 550px;
-        background: url('~assets/images/home/bg_integration.png') left
+        background: url("~assets/images/home/bg_integration.png") left
           top/contain no-repeat;
       }
       @media screen and (min-width: $desktop) {
@@ -416,7 +432,7 @@ $saloons: beauty spa cosmetic hairdressers barbershop massage tattoo lash
 
     &.clients {
       height: 500px;
-      background: url('~assets/images/home/bg_clients_mobile.png') 180px
+      background: url("~assets/images/home/bg_clients_mobile.png") 180px
         bottom/78% no-repeat #fff;
       @media screen and (min-width: $tablet) {
         height: 550px;
@@ -425,11 +441,11 @@ $saloons: beauty spa cosmetic hairdressers barbershop massage tattoo lash
       }
       @media screen and (min-width: $desktop) {
         height: 755px;
-        background: url('~assets/images/home/bg_clients.png') 80% bottom/43%
+        background: url("~assets/images/home/bg_clients.png") 80% bottom/43%
           no-repeat #fff;
       }
       @media screen and (min-width: $wide) {
-        background: url('~assets/images/home/bg_clients_wide.png') 80%
+        background: url("~assets/images/home/bg_clients_wide.png") 80%
           bottom/contain no-repeat #fff;
       }
       .subheader {
@@ -504,13 +520,13 @@ $saloons: beauty spa cosmetic hairdressers barbershop massage tattoo lash
       width: 90px;
       height: 90px;
       margin-bottom: 13px;
-      content: '';
+      content: "";
       border-radius: 50%;
       box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
     }
     @each $saloon in $saloons {
       &.#{$saloon}:before {
-        background: url('~assets/images/svg/#{$saloon}.svg')
+        background: url("~assets/images/svg/#{$saloon}.svg")
           center/contain
           no-repeat;
       }

@@ -67,11 +67,11 @@ export default {
       position: absolute;
       top: 50%;
       right: 20px;
-      content: '';
+      content: "";
       width: 10px;
       height: 6px;
       margin-top: -3px;
-      background: url('~assets/images/svg/down.svg') center no-repeat;
+      background: url("~assets/images/svg/down.svg") center no-repeat;
     }
   }
 

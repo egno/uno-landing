@@ -45,7 +45,7 @@ $checkbox-height: 16px;
   color: #07101c;
 }
 .tumbler + label:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -56,7 +56,7 @@ $checkbox-height: 16px;
   transition: 0.2s;
 }
 .tumbler + label:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 1px;
   left: 1px;

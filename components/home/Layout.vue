@@ -2,16 +2,19 @@
   <div class="main-page">
     <div class="main-page-sections">
       <slot />
-
       <section class="easier">
         <div class="content">
           <div class="text-wrapper">
             <div class="main-page__heading">
-              ЛЮБИМОЕ ДЕЛО<br>СТАНЕТ ПРОЩЕ
+              ЛЮБИМОЕ ДЕЛО
+              <br>СТАНЕТ ПРОЩЕ
             </div>
-            <a id="regbutton_maindown" :href="registerLink" class="btn" @mousedown.native="$metrika.reachGoal( 'regbutton_maindown')">
-              ПОПРОБУЙТЕ БЕСПЛАТНО
-            </a>
+            <a
+              id="regbutton_maindown"
+              :href="registerLink"
+              class="btn"
+              @mousedown.native="$metrika.reachGoal('regbutton_maindown')"
+            >ПОПРОБУЙТЕ БЕСПЛАТНО</a>
           </div>
         </div>
       </section>
@@ -40,7 +43,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~assets/styles/public-sections.scss';
+@import "~assets/styles/public-sections.scss";
 
 .main-page-sections {
   background: #f3f4f7;
@@ -57,13 +60,13 @@ export default {
       color: #fff;
       @media only screen and (min-width: $tablet) {
         height: 400px;
-        background: url('~assets/images/home/bg_easier_tablet.png') right
+        background: url("~assets/images/home/bg_easier_tablet.png") right
             center/contain no-repeat,
           linear-gradient(64.96deg, #c1240f 0%, #ee5742 100%);
       }
       @media screen and (min-width: $desktop) {
         height: 600px;
-        background: url('~assets/images/home/bg_easier.png') right
+        background: url("~assets/images/home/bg_easier.png") right
             center/contain no-repeat,
           linear-gradient(64.96deg, #c1240f 0%, #ee5742 100%);
       }
@@ -145,7 +148,7 @@ export default {
               right: 0;
               display: inline-block;
               vertical-align: sub;
-              content: '';
+              content: "";
               width: 0;
               height: 8px;
               border-right: 1px solid #8995af;

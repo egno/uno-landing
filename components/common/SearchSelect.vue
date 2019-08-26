@@ -114,7 +114,9 @@ export default {
       const searchString = this.searchingValue.trim().toLowerCase()
       if (this.searchingProp) {
         return this.options.filter((option) => {
-          return deepFind(option, this.searchingProp).toLowerCase().includes(searchString)
+          return deepFind(option, this.searchingProp)
+            .toLowerCase()
+            .includes(searchString)
         })
       }
 
@@ -155,7 +157,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~assets/styles/dropdown-select.scss';
+@import "~assets/styles/dropdown-select.scss";
 
 .custom-select {
   position: relative;

@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/styles/common.scss';
+@import "~assets/styles/common.scss";
 
 .main-page__links {
   display: flex;
@@ -53,17 +53,17 @@ export default {
     &.vk {
       width: 28px;
       height: 16px;
-      background: url('~assets/images/svg/vk.svg') center/contain no-repeat;
+      background: url("~assets/images/svg/vk.svg") center/contain no-repeat;
     }
     &.fb {
       width: 16px;
       height: 29px;
-      background: url('~assets/images/svg/fb.svg') center/contain no-repeat;
+      background: url("~assets/images/svg/fb.svg") center/contain no-repeat;
     }
     &.ig {
       width: 27px;
       height: 27px;
-      background: url('~assets/images/ig.png') center/contain no-repeat;
+      background: url("~assets/images/ig.png") center/contain no-repeat;
     }
   }
 }

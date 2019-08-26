@@ -102,11 +102,7 @@
           КОНТАКТЫ
         </div>
         <div>
-          <a
-            href="tel:+73832131415"
-            class="link"
-            @click.native="$emit('click')"
-          >+ 7 (383) 213-14-15</a>
+          <a href="tel:+73832131415" class="link" @click.native="$emit('click')">+ 7 (383) 213-14-15</a>
         </div>
         <div>
           <a
@@ -168,7 +164,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/styles/common.scss';
+@import "~assets/styles/common.scss";
 
 .list {
   list-style: none;

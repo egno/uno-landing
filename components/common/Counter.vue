@@ -109,7 +109,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~assets/styles/common.scss';
+@import "~assets/styles/common.scss";
 
 .counter {
   @extend %vertical-align;
@@ -132,12 +132,12 @@ export default {
 
     &._down {
       left: 0.0625rem;
-      background-image: url('~assets/images/svg/minus-white.svg');
+      background-image: url("~assets/images/svg/minus-white.svg");
     }
 
     &._up {
       right: 0.0625rem;
-      background-image: url('~assets/images/svg/plus-white.svg');
+      background-image: url("~assets/images/svg/plus-white.svg");
       background-size: 12px;
     }
   }

@@ -39,7 +39,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@import '~assets/styles/common.scss';
+@import "~assets/styles/common.scss";
 
 .steps {
   @extend %vertical-align;
@@ -64,15 +64,15 @@ export default {
     }
 
     &._prev {
-      background-image: url('~assets/images/svg/next.svg');
+      background-image: url("~assets/images/svg/next.svg");
       transform: rotate(180deg);
     }
 
     &._next {
-      background-image: url('~assets/images/svg/next.svg');
+      background-image: url("~assets/images/svg/next.svg");
     }
 
-    &[disabled='disabled'] {
+    &[disabled="disabled"] {
       opacity: 0.5;
       &:hover {
         background-color: #fff;

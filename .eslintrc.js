@@ -8,16 +8,22 @@ module.exports = {
   },
   parserOptions: {
     ecmaFeatures: {
+      impliedStrict: true,
+      classes: true,
       jsx: true
     },
     sourceType: 'module',
     parser: 'babel-eslint',
-    ecmaVersion: 2018
+    ecmaVersion: 9
   },
   extends: [
+    'prettier',
+    'prettier/standard', 
     '@nuxtjs',
     'plugin:nuxt/recommended'
   ],
+
+  plugins: ["prettier"],
   // add your custom rules here
   rules: {
     'import/no-unresolved': 0,

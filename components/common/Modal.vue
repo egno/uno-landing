@@ -12,8 +12,8 @@
             type="button"
             class="uno-modal__left"
             @click="
-              $emit('leftButtonClick')
-              $emit('close')
+              $emit('leftButtonClick');
+              $emit('close');
             "
           >
             {{ template.leftButton }}
@@ -22,8 +22,8 @@
             type="button"
             class="uno-modal__right"
             @click="
-              $emit('rightButtonClick')
-              $emit('close')
+              $emit('rightButtonClick');
+              $emit('close');
             "
           >
             {{ template.rightButton }}
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~assets/styles/common.scss';
+@import "~assets/styles/common.scss";
 .uno-modal {
   position: relative;
   padding: 30px 30px 25px;
@@ -70,7 +70,7 @@ export default {
     right: 17px;
     width: 24px;
     height: 24px;
-    background: url('~assets/images/svg/cross.svg') center/14px no-repeat;
+    background: url("~assets/images/svg/cross.svg") center/14px no-repeat;
     outline: none;
   }
 

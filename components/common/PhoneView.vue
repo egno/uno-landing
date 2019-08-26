@@ -16,7 +16,9 @@ export default {
   },
   methods: {
     phoneLink (value) {
-      if (!value) { return '' }
+      if (!value) {
+        return ''
+      }
       return `tel:+${value}`
     }
   }
@@ -29,7 +31,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding-left: 24px;
-  background: url('~assets/images/svg/ru.svg') left 4px no-repeat;
+  background: url("~assets/images/svg/ru.svg") left 4px no-repeat;
   min-width: 13em;
 }
 
@@ -39,7 +41,7 @@ a {
   line-height: 24px;
   text-decoration: none;
   color: #07101c;
-  background: url('~assets/images/svg/phone.svg') right top no-repeat;
+  background: url("~assets/images/svg/phone.svg") right top no-repeat;
 }
 a:hover {
   text-decoration: underline;

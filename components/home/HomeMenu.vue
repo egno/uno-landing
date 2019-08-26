@@ -38,17 +38,17 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~assets/styles/common.scss';
+@import "~assets/styles/common.scss";
 
 .home-menu {
   .hamburger-menu {
     width: 28px;
     height: 24px;
     margin-right: 20px;
-    background: url('~assets/images/svg/menu.svg') center/contain no-repeat;
+    background: url("~assets/images/svg/menu.svg") center/contain no-repeat;
     outline: none;
     &.active {
-      background: url('~assets/images/svg/cross.svg') center/14px no-repeat;
+      background: url("~assets/images/svg/cross.svg") center/14px no-repeat;
     }
   }
 

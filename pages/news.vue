@@ -92,7 +92,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~assets/styles/common.scss';
+@import "~assets/styles/common.scss";
 
 $header-height: 80px;
 $header-desktop-height: 146px;
@@ -107,7 +107,7 @@ $min-height: 667px;
       height: 100vh;
       margin-top: -80px;
       */
-      background: url('~assets/images/news/bg_update.png') right 8%/100%
+      background: url("~assets/images/news/bg_update.png") right 8%/100%
         no-repeat #f3f4f7;
       /* for animation of header on mobiles
       @media only screen and (min-width : $tablet) {
@@ -122,11 +122,11 @@ $min-height: 667px;
         height: calc(100vh - #{$header-desktop-height});
       }
       @media screen and (min-width: $desktop) {
-        background: url('~assets/images/news/bg_update.png') right center/54%
+        background: url("~assets/images/news/bg_update.png") right center/54%
           no-repeat #f3f4f7;
       }
       @media screen and (min-width: $wide) {
-        background: url('~assets/images/news/bg_update.png') 90% center/950px
+        background: url("~assets/images/news/bg_update.png") 90% center/950px
           auto no-repeat #f3f4f7;
       }
       .content {

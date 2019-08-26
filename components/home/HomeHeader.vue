@@ -24,7 +24,10 @@
         >
           СЕРВИСЫ
         </nuxt-link>
-        <nuxt-link :to="{ name: 'news' }" :class="{ current: $route.name === 'news' }">
+        <nuxt-link
+          :to="{ name: 'news' }"
+          :class="{ current: $route.name === 'news' }"
+        >
           НОВОСТИ
         </nuxt-link>
       </div>
@@ -103,7 +106,6 @@ export default {
     }
   },
   methods: {
-
     checkElement () {
       this.$nextTick(() => {
         this.firstSection = document.querySelector('.main-page__first')
