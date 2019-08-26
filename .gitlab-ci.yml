@@ -33,6 +33,7 @@ biuld:
 
 pages:
   stage: deploy
+  image: alpine
   script:
   - mkdir .public
   - cp -r * .public
@@ -41,7 +42,7 @@ pages:
     paths:
       - public
   only:
-  - master
+    - master
 
 
 
