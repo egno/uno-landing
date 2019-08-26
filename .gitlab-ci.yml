@@ -3,6 +3,7 @@ image: docker
 stages:
   - lint
   - build
+  - dockerize
   - deploy
   
 lint:
@@ -33,7 +34,7 @@ build:
 
 
 build_production:
-  stage: build
+  stage: dockerize
   image: docker:stable
   dependencies:
     - build
