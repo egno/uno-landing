@@ -33,12 +33,28 @@ build:
     - npm run generate
 
 
+
+build_development:
+  stage: dockerize
+  image: docker:stable
+  dependencies:
+    - build
+  tags:
+    - docker
+
+  before_script:
+    - docker info
+
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build -t $CI_REGISTRY_IMAGE:develop .
+    - docker push $CI_REGISTRY_IMAGE:develop
+
 build_production:
   stage: dockerize
   image: docker:stable
   dependencies:
     - build
-
   tags:
     - docker
   only:
