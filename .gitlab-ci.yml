@@ -17,33 +17,30 @@ lint:
     - npm install --registry=https://npm.gisauto.ru
     - npm run lint
 
-build_development:
+biuld:
   stage: build
-  image: docker:stable
+  image: node:10.15-alpine
   tags:
-    - docker
-
-  before_script:
-    - docker info
-
+    - node
+  paths:
+    - node_modules
+  artifacts:
+    paths:
+      - public
   script:
-    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - npm run generate
 
-build_production:
-  stage: build
-  image: docker:stable
-  tags:
-    - docker
+pages:
+  stage: deploy
+  script:
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
+  artifacts:
+    paths:
+      - public
   only:
-    - tags
-
-  before_script:
-    - docker info
-
-  script:
-    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
-
-
+  - master
 
 
 
