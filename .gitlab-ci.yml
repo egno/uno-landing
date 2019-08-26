@@ -27,6 +27,7 @@ build:
     paths:
       - node_modules
   artifacts:
+    expire_in: 2h
     paths:
       - public/
   script:
